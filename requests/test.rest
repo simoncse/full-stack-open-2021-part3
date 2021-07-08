@@ -1,0 +1,16 @@
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Simon Fielding ",
+    "number": "1234"
+}
+
+
+###
+Get http://localhost:3001/api/persons
+
+
+###
+DELETE http://localhost:3001/api/persons/18258
