@@ -6,6 +6,10 @@ const app = express();
 const cors = require('cors')
 app.use(cors())
 
+
+//Statis
+app.use(express.static('build'))
+
 app.use(express.json())
 
 let persons = [
