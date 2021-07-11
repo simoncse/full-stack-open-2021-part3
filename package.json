@@ -8,16 +8,21 @@
     "dev": "nodemon index.js",
     "deploy": "git push heroku HEAD:master",
     "build:ui": "rm -rf build && cd /home/simon/full-stack-open-2021/part2/phonebook && npm run build --prod && cp -r build /home/simon/full-stack-open-2021-part3",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "mongoose": "^5.13.2",
+    "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^7.30.0",
     "nodemon": "^2.0.9"
   }
 }
